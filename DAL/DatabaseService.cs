@@ -9,10 +9,10 @@ namespace DAL
 {
     public class DatabaseService
     {
-        const string serverName = "GIANGVAN";
-        const string databaseName = "Hutech_QLSV";
-        const string userName = "user0";
-        const string password = "123";
+        const string serverName = "ADMIN-PC";
+        const string databaseName = "QL_SinhVien";
+        const string userName = "sa";
+        const string password = "1296080612";
         public string stringConfig = "server=" + serverName + ";database=" + databaseName + ";uid=" + userName + ";pwd=" + password;
         public SqlConnection connection;
         public SqlCommand command;
