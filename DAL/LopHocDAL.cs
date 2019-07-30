@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DTO;
+using System.Data;
 using System.Data.SqlClient;
 namespace DAL
 {
@@ -25,9 +26,19 @@ namespace DAL
             reader.Close();
             return dsLop;
         }
+
+        
         public bool ThemMoiLopHoc(LopHoc lop)
         {
-            // tuong tac voi co so du lieu
+            string sql = "insert into Lop values(@ma, @ten)";
+            SqlParameter parMa = new SqlParameter("@ma", SqlDbType.NVarChar);
+            parMa.Value = lop.MaLop;
+            SqlParameter parTen = new SqlParameter("@ten", SqlDbType.NVarChar);
+            parTen.Value = lop.TenLop;
+            bool kq = WriteData(sql, new[] { parMa, parTen });
+            return true;
         }
+        
+
     }
 }

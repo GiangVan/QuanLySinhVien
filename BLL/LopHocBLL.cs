@@ -15,18 +15,18 @@ namespace BLL
             return dal.getAlllop();
         }
 
+      
         public bool ThemMoiLopHoc(LopHoc lop)
         {
-            if (lop.MaLop.Length != 5)
-            {
-                return false;
-            }
-            if (lop.TenLop.Length < 10)
-            {
-                return false;
-            }
-            // goi DAL luu moi
-            return true;
+            if (lop.MaLop.Length != 5) { return false; }
+
+            if (lop.TenLop.Length < 10) { return false; }
+            // gọi dal lưu moi
+            LopHocDAL dal = new LopHocDAL();
+            return dal.ThemMoiLopHoc(lop);
         }
+        
+
     }
+   
 }
