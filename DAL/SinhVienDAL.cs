@@ -24,7 +24,7 @@ namespace DAL
                 sv.MaSV = masv;
                 sv.TenSV = tensv;
                 sv.MaLop = malop;
-                dsSinhVien.Add(sv);
+                dsSinhVien.Add(sv);//ggg
             }
             reader.Close();
             return dsSinhVien;
