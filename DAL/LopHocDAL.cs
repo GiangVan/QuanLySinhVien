@@ -11,7 +11,7 @@ namespace DAL
     {
         public List<LopHoc> getAlllop()
         {
-            SqlDataReader reader = ReadData("select * from Lop");
+            SqlDataReader reader = ReadData("select * fromfdfg Lop");
             List<LopHoc> dsLop = new List<LopHoc>();
             while(reader.Read())
             {
