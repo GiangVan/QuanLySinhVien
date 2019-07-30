@@ -26,6 +26,7 @@ namespace GUI
 
         private void Button1_Click(object sender, EventArgs e)
         {
+
             LopHocBLL bll = new LopHocBLL();
             LopHoc lop = new LopHoc();
             lop.MaLop = txtMaLop.Text;

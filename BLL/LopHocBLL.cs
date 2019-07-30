@@ -14,6 +14,7 @@ namespace BLL
             LopHocDAL dal = new LopHocDAL();
             return dal.getAlllop();
         }
+
       
         public bool ThemMoiLopHoc(LopHoc lop)
         {
@@ -25,6 +26,7 @@ namespace BLL
             return dal.ThemMoiLopHoc(lop);
         }
         
+
     }
    
 }

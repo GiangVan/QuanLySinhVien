@@ -30,6 +30,7 @@
         {
             this.btnTaiDanhSachLop = new System.Windows.Forms.Button();
             this.gvLopHoc = new System.Windows.Forms.DataGridView();
+
             this.label1 = new System.Windows.Forms.Label();
             this.txtMaLop = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,6 +41,7 @@
             this.txtMa = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtTen = new System.Windows.Forms.TextBox();
+
             ((System.ComponentModel.ISupportInitialize)(this.gvLopHoc)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,6 +64,7 @@
             this.gvLopHoc.Name = "gvLopHoc";
             this.gvLopHoc.RowHeadersWidth = 51;
             this.gvLopHoc.RowTemplate.Height = 24;
+
             this.gvLopHoc.Size = new System.Drawing.Size(428, 227);
             this.gvLopHoc.TabIndex = 1;
             // 
@@ -80,10 +83,12 @@
             this.txtMaLop.Name = "txtMaLop";
             this.txtMaLop.Size = new System.Drawing.Size(255, 20);
             this.txtMaLop.TabIndex = 3;
+
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+
             this.label2.Location = new System.Drawing.Point(499, 142);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 13);
@@ -149,6 +154,7 @@
             this.txtTen.Size = new System.Drawing.Size(224, 20);
             this.txtTen.TabIndex = 7;
             // 
+
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -164,10 +170,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtMaLop);
             this.Controls.Add(this.label1);
+
             this.Controls.Add(this.gvLopHoc);
             this.Controls.Add(this.btnTaiDanhSachLop);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.gvLopHoc)).EndInit();
             this.ResumeLayout(false);
@@ -179,6 +187,7 @@
 
         private System.Windows.Forms.Button btnTaiDanhSachLop;
         private System.Windows.Forms.DataGridView gvLopHoc;
+
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtMaLop;
         private System.Windows.Forms.Label label2;
@@ -189,6 +198,7 @@
         private System.Windows.Forms.TextBox txtMa;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtTen;
+
     }
 }
 

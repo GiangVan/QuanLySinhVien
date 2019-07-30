@@ -26,6 +26,7 @@ namespace DAL
             reader.Close();
             return dsLop;
         }
+
         
         public bool ThemMoiLopHoc(LopHoc lop)
         {
@@ -38,5 +39,6 @@ namespace DAL
             return true;
         }
         
+
     }
 }
