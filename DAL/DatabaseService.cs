@@ -22,7 +22,7 @@ namespace DAL
         }
         public void OpenConnection()
         {
-            if (connection != null && connection.State == ConnectionState.Closed)
+            if (connection != null && connection.State == ConnectionState.Closed)//55
                 connection.Open();
         }
         public  void CloseConnection()
