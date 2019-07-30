@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class LopHoc
+    public class SinhVien
     {
+        public string MaSV { get; set; }
+        public string TenSV { get; set; }
         public string MaLop { get; set; }
-        public string TenLop { get; set; }
     }
-
-    
 }
