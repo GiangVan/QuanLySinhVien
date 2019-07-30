@@ -46,21 +46,25 @@ namespace GUI
 
         private void BtnAddSV_Click(object sender, EventArgs e)
         {
-            SinhVienBLL bLL = new SinhVienBLL();
-            SinhVien sv = new SinhVien();
-            sv.MaSV = txtMa.Text;
-            sv.TenSV = txtTen.Text;
-            sv.MaLop = txtMaLop.Text;
-            bool kq = bLL.ThemMoiSinhVien(sv);
-            if (kq == true)
-            {
-                MessageBox.Show("Thêm Ok");
-                button1.PerformClick();
-            }
-            else
-            {
-                MessageBox.Show("Lỗi");
-            }
+            
+            
+                SinhVienBLL bLL = new SinhVienBLL();
+                SinhVien sv = new SinhVien();
+                sv.MaSV = txtMa.Text;
+                sv.TenSV = txtTen.Text;
+                sv.MaLop = txtMaLop.Text;
+                bool kq = bLL.ThemMoiSinhVien(sv);
+                if (kq == true)
+                {
+                    MessageBox.Show("Thêm Ok");
+                    btnAddSV.PerformClick();
+                }
+                else
+                {
+                    MessageBox.Show("Lỗi");
+                }
+            
+            
         }
     }
 }
