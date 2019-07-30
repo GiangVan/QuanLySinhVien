@@ -11,7 +11,7 @@ namespace DAL
     {
         public List<LopHoc> getAlllop()
         {
-            SqlDataReader reader = ReadData("select * fro333m Lop");
+            SqlDataReader reader = ReadData("select * from Lop");
             List<LopHoc> dsLop = new List<LopHoc>();
             while(reader.Read())
             {
@@ -24,6 +24,10 @@ namespace DAL
             }
             reader.Close();
             return dsLop;
+        }
+        public bool ThemMoiLopHoc(LopHoc lop)
+        {
+            // tuong tac voi co so du lieu
         }
     }
 }
