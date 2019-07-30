@@ -23,5 +23,10 @@ namespace GUI
             LopHocBLL bll = new LopHocBLL();
             gvLopHoc.DataSource = bll.GetAlllop();
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

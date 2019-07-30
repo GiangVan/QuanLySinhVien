@@ -14,5 +14,19 @@ namespace BLL
             LopHocDAL dal = new LopHocDAL();
             return dal.getAlllop();
         }
+
+        public bool ThemMoiLopHoc(LopHoc lop)
+        {
+            if (lop.MaLop.Length != 5)
+            {
+                return false;
+            }
+            if (lop.TenLop.Length < 10)
+            {
+                return false;
+            }
+            // goi DAL luu moi
+            return true;
+        }
     }
 }

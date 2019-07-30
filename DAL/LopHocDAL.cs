@@ -25,5 +25,9 @@ namespace DAL
             reader.Close();
             return dsLop;
         }
+        public bool ThemMoiLopHoc(LopHoc lop)
+        {
+            // tuong tac voi co so du lieu
+        }
     }
 }
